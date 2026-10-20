@@ -1,71 +1,59 @@
-<div align="center">
-  <h1>
-    End-to-End Banking Customer Churn Analytics & Predictive Modeling
-  </h1>
-</div>
+# Bank Customer Churn Analytics and Prediction
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SQL-Advanced%20Analytics-blue?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Statistics-Hypothesis%20Testing-orange?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Machine%20Learning-Churn%20Classification-success?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Tableau-Interactive%20Dashboard-purple?style=flat-square"/>
-</p>
+**Harshit Kumar** · [GitHub](https://github.com/harshit-kumar-2912)
 
----
+My banking customer churn analytics portfolio project brings together SQL, Python, statistics, machine learning, and Tableau. It explores customer churn through data preparation, relational analysis, statistical testing, and predictive modeling.
 
-## 🧠 Business Problem
+## Business objective
 
-In the highly competitive banking industry, customer retention is a key driver of profitability. Acquiring new customers is significantly more expensive than retaining existing ones. However, many banks lack a structured, data-driven approach to proactively identify customers at risk of churn. 
+The aim is to understand which customer and account characteristics are associated with churn and explore how predictive models can support customer retention decisions.
 
----
+The project covers:
 
-## 🎯 Objective 
+- Preparing demographic, account, and geographic data for analysis.
+- Organizing the data into a relational SQL Server schema.
+- Exploring churn patterns using SQL and statistical hypothesis tests.
+- Engineering features and comparing classification models.
+- Presenting the analysis through a Tableau workbook and supporting documentation.
 
-The ultimate goal was to enable the bank to proactively identify high-risk customers and optimize retention strategies. The objective of this project was to:
--	Analyze historical customer and account data to understand key drivers of churn
--	Statistically validate relationships between customer attributes and churn behavior
--	Build a predictive machine learning model to estimate churn probability
--	Develop an interactive Tableau dashboard to support retention decision-making
+## Project workflow
 
----
+1. **Data preparation:** Python scripts inspect and clean the raw data, with processed tables stored as CSV files.
+2. **Relational modeling:** A SQL Server schema connects demographic, account, and location tables. The documentation includes an entity relationship diagram.
+3. **Exploratory analysis:** SQL queries examine churn across customer segments.
+4. **Statistical analysis:** A notebook explores relationships using hypothesis testing, including t-tests, chi-square tests, and ANOVA.
+5. **Predictive modeling:** Preprocessing creates features such as balance-to-salary ratio and tenure-to-age ratio, scales numeric features, and encodes categorical variables. Experiment notebooks cover logistic regression, random forest, SVM, and XGBoost.
+6. **Evaluation and visualization:** The evaluation helper reports churn recall, precision, F1, and ROC AUC. A Tableau workbook supports visual exploration of the analysis.
 
-## 📊 Data & Inputs
+## Repository guide
 
-- The project utilized structured relational banking data stored in SQL Server and modeled into normalized tables:
--	Demographic, Account and Locations Table
+| Folder | Contents |
+| --- | --- |
+| [data](data/) | Raw Excel data and processed account, demographic, and location tables |
+| [scripts](scripts/) | Data cleaning, SQL ingestion, and utility scripts |
+| [eda_queries](eda_queries/) | SQL queries for exploratory analysis |
+| [statistical_testing](statistical_testing/) | Statistical analysis notebook |
+| [predictive_modelling](predictive_modelling/) | Model experiments, evaluation helper, and preprocessing artifacts |
+| [data_visualization](data_visualization/) | Tableau workbook |
+| [documentation](documentation/) | Problem definition, data documentation, ERD, and visual references |
 
----
+## Tools and technologies
 
-## ⚙️ Technical Approach
+Python, pandas, NumPy, scikit-learn, XGBoost, joblib, pyodbc, SQL Server, Jupyter Notebook, and Tableau.
 
-- Designed relational data model (Demographic–Account–Location)
--	Created ERD and implemented schema in SQL Server and Performed advanced SQL EDA
--	Built reusable preprocessing functions in Python for Data type validation, Missing value checks, Categorical sanity checks & Distribution and outlier Detection
--	Statistical Hypothesis Testing (Independent Samples t-test, Chi-Square Test of Independence, ANOVA, Effect Size Metrics)
--	Performed feature engineering and feature scaling to preprocess data
--	Implemented different ML prediction algorithms to find the best model as a baseline model
--	Designed an interactive Tableau dashboard based on stakeholder requirements
+## Exploring the project
 
----
+1. Start with the problem definition and data documentation in [documentation/docs](documentation/docs/).
+2. Review the raw and processed datasets in [data](data/), then inspect the cleaning scripts and SQL schema in [scripts](scripts/).
+3. Explore the SQL queries, statistical notebook, and model experiment notebooks.
+4. Open [Churn Prediction.twb](<data_visualization/Churn Prediction.twb>) in Tableau and update its data connections for your environment.
 
-## 🛠 Key Skills Demonstrated
+To execute the Python and SQL workflows, install the packages used by the scripts and notebooks, configure SQL Server and an appropriate ODBC driver, and update the local server names and file paths. The ingestion script contains separate table-loading sections; check that each section reads its matching processed CSV before running it.
 
-- End-to-end data science workflow (SQL, Python, Statistical Inference, ML, Tableau)
--	Relational data modeling & SQL analytics
--	Statistical hypothesis testing in real-world business context
--	Feature engineering driven by statistical validation
--	Predictive modeling for churn classification
--	BI dashboard design aligned with stakeholder requirements
--	Translating data insights into actionable business strategy
+The repository contains analysis and model experiments. It does not include a deployed prediction service or a consolidated automated training command.
 
----
+## About me
 
-## 🎥 YouTube Walkthrough
- 
-https://youtu.be/8sfXdtYft74
+I'm Harshit Kumar. This repository is part of my data analytics and machine learning portfolio, with a focus on connecting customer data analysis to practical business questions.
 
-
-
-## Project Files
-
-[Browse the banking customer churn project](<End-to-End Banking Customer Churn Analytics & Predictive Modeling/>). This folder contains the datasets, SQL scripts, Python preprocessing, model experiments, statistical analysis, Tableau workbook, and documentation.
+[View my GitHub profile](https://github.com/harshit-kumar-2912)
